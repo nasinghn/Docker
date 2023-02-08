@@ -1,5 +1,5 @@
-FROM ubuntu 
-RUN apt-get update 
-RUN apt-get install apache2 -y
-RUN apt-get clean 
+FROM centos
+RUN yum update -y 
+RUN yum install httpd -y 
+RUN yum clean all
 EXPOSE 80
